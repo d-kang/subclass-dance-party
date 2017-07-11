@@ -1,5 +1,5 @@
 //blank blinky dancer template
-var blankBlinkyDancer = function blankBlinkyDancer(top, left, timeBetweenSteps) {
+var makeBlankBlinkyDancer = function makeBlankBlinkyDancer(top, left, timeBetweenSteps) {
   this.$node = $('<span class="dancer"></span>');
   makeDancer.call(this, top, left, timeBetweenSteps);
   var oldStep = this.step;

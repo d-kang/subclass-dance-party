@@ -1,5 +1,5 @@
 //dancer template
-var blankDancer = function blankDancer(top, left, timeBetweenSteps) {
+var makeBlankDancer = function makeBlankDancer(top, left, timeBetweenSteps) {
   this.$node = $('<span class="dancer"></span>');
   makeDancer.call(this, top, left, timeBetweenSteps);
   var oldStep = this.step;

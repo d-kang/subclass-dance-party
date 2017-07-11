@@ -1,6 +1,6 @@
-body, html{
+/*body, html{
   height:100%;
-}
+}*/
 
 html, body {
   padding: 0;
@@ -12,7 +12,7 @@ canvas {
   height: 100%;
 }
 
-
+/*
 body{
   margin: 0px;
   background-color:#444;
@@ -54,4 +54,4 @@ body, a:link, a:visited, a:active{
   background: url('https://ih0.redbubble.net/image.333681925.4428/st%2Csmall%2C215x235-pad%2C210x230%2Cf8f8f8.lite-1u1.jpg') center center;
   border-radius:10px;
   position:absolute;
-}
+}*/

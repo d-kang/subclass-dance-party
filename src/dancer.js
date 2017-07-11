@@ -34,7 +34,7 @@
 
 // Creates and returns a new dancer object that can step
 var makeDancer = function(top, left, timeBetweenSteps) {
-
+debugger;
   //var dancer = {};
 
   // use jQuery to create an HTML <span> tag
@@ -43,7 +43,6 @@ var makeDancer = function(top, left, timeBetweenSteps) {
   this.step = function() {
     // the basic dancer doesn't do anything interesting at all on each step,
     // it just schedules the next step
-    console.log('this:', this)
     setTimeout(this.step.bind(this), timeBetweenSteps);
   };
   this.step();

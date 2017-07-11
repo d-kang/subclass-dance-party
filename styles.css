@@ -47,11 +47,45 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
-.parrotDancer{
-  animation: spinner 4.5s infinite alternate ease-in-out;
+
+
+@keyframes spinner {
+  100% {
+    transform: rotate(3600deg);
+  }
+}
+
+@keyframes rot {
+  from {
+    transform: rotate(0deg)
+               translate(-150px)
+               rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg)
+               translate(-150px)
+               rotate(-360deg);
+  }
+}
+
+
+/*.parrotDancer {
+  display: inline-block;
   width: 100px;
   height: 100px;
   background: url('https://ih0.redbubble.net/image.333681925.4428/st%2Csmall%2C215x235-pad%2C210x230%2Cf8f8f8.lite-1u1.jpg') center center;
+  background-size: contain;
+  transition-origin: 50% 50%;
+  animation: spinner 3s infinite alternate ease-in-out;
+}*/
+
+
+.parrotDancer{
+  animation: rot 0.5s infinite linear;
+  width: 50px;
+  height: 50px;
+  background: url('https://ih0.redbubble.net/image.333681925.4428/st%2Csmall%2C215x235-pad%2C210x230%2Cf8f8f8.lite-1u1.jpg') center center;
+  background-size : contain;
   border-radius:10px;
   position:absolute;
 }

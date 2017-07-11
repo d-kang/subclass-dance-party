@@ -1,7 +1,6 @@
-//dancer template
-var blankDancer = function blankDancer(top, left, timeBetweenSteps) {
-  this.$node = $('<span class="dancer"></span>');
+var makeSpinningDancer = function makeSpinningDancer(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
+  this.$node = $('<span class="emojispinner"></span>');
   var oldStep = this.step;
   this.step = function() {
     oldStep.call(this);

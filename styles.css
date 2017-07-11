@@ -25,3 +25,15 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+
+
+.emojispinner{
+  animation: spinner 4.5s infinite alternate ease-in-out;
+  width: 100px;
+  height: 1000px;
+  /*border:10px solid;*/
+  background: url('http://orig07.deviantart.net/ea15/f/2014/213/7/4/spinning_awesome_face_by_centaury0-d7tadc3.gif') center center;
+  border-radius:10px;
+  position:absolute;
+}

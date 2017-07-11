@@ -1,24 +1,67 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
     <title>Floating Particles</title>
-    <link rel="stylesheet" type="text/css" href="main.css" />
-    <!-- <script src="lib/jquery.js"></script>
+    <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
     <script src="src/blankDancer.js"></script>
     <script src="src/blankBlinkyDancer.js"></script>
     <script src="src/spinningDancer.js"></script>
     <script src="src/parrotDancer.js"></script>
-    <script src="src/floatingParticles.js"></script> -->
-  <script src="src/app.js" charset="utf-8"></script>
+    <script src="src/floatingParticles.js"></script>
   </head>
   <body>
-    <canvas> </canvas>
+
+    <div class="topbar">
+
+      <span class="title">
+        object dance party
+      </span>
+      <!-- makeDancer -->
+      <a href="#"
+        class="addDancerButton"
+        data-dancer-maker-function-name="makeDancer">
+        makeDancer</a>
+      <!-- makeBlinkyDancer -->
+      <a href="#"
+        class="addDancerButton"
+        data-dancer-maker-function-name="makeBlinkyDancer">
+        makeBlinkyDancer</a>
+        <!-- makeBlankBlinkyDancer -->
+      <a href="#"
+        class="addDancerButton"
+        data-dancer-maker-function-name="makeBlankBlinkyDancer">
+        makeBlankBlinkyDancer</a>
+
+        <!-- makeSpinningDancer -->
+      <a href="#"
+        class="addDancerButton"
+        data-dancer-maker-function-name="makeSpinningDancer">
+        makeSpinningDancer</a>
+
+        <!-- makeParrotDancer -->
+      <a href="#"
+        class="addDancerButton"
+        data-dancer-maker-function-name="makeParrotDancer">
+        makeParrotDancer</a>
+
+        <!-- makeFloatingParticles -->
+      <a href="#"
+        class="addDancerButton"
+        data-dancer-maker-function-name="makeFloatingParticles">
+        makeFloatingParticles</a>
 
 
+
+    </div>
+
+  <canvas> </canvas>
     <script src="src/init.js"></script>
 
 
+    <script src="src/app.js" charset="utf-8"></script>
   </body>
 </html>

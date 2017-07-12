@@ -1,5 +1,7 @@
 $(document).ready(function() {
   window.dancers = [];
+  window.parrotDancers = [];
+  window.spinningDancers = [];
 
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
@@ -35,5 +37,29 @@ $(document).ready(function() {
     );
     $('body').append(dancer.$node);
 
+  });
+
+  $('.lineUpButton').on('click', function(event) {
+    for (var i = 0; i < window.dancers.length; i++) {
+      // console.log(window.dancers[i]);
+      window.dancers[i].lineUp();
+    }
+  });
+
+  $('.pairButton').on('click', function(event) {
+
+    if (window.parrotDancers.length <= window.spinningDancers.length) {
+      for (var i = 0; i < window.parrotDancers.length; i++) {
+        var left = window.spinningDancers[i].left;
+        var top = window.spinningDancers[i].top;
+        window.parrotDancers[i].pair(top, left);
+      }
+    } else {
+      for (var i = 0; i < window.spinningDancers.length; i++) {
+        var left = window.parrotDancers[i].left;
+        var top = window.parrotDancers[i].top;
+        window.spinningDancers[i].pair(top, left);
+      }
+    }
   });
 });

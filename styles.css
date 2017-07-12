@@ -11,6 +11,13 @@ html, body {
 canvas {
   height: 100%;
 }
+/*canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:#000;
+  cursor: pointer;
+}*/
 
 
 body{
@@ -18,6 +25,7 @@ body{
   background-color:#444;
   font-size: 18px;
 }
+
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
@@ -59,12 +67,12 @@ body, a:link, a:visited, a:active{
 @keyframes rot {
   from {
     transform: rotate(0deg)
-               translate(-50px)
+               translate(-25px)
                rotate(0deg);
   }
   to {
     transform: rotate(360deg)
-               translate(-50px)
+               translate(-25px)
                rotate(-360deg);
   }
 }
@@ -82,7 +90,7 @@ body, a:link, a:visited, a:active{
 
 
 .parrotDancer{
-  animation: rot 0.5s infinite linear;
+  animation: rot 0.35s infinite linear;
   width: 50px;
   height: 50px;
   background: url('https://ih0.redbubble.net/image.333681925.4428/st%2Csmall%2C215x235-pad%2C210x230%2Cf8f8f8.lite-1u1.jpg') center center;
@@ -90,3 +98,40 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+#audio {
+  position: absolute;
+  bottom: 0;
+
+}
+
+.bdancer {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  border-radius: 50%;
+  background: url('https://ih0.redbubble.net/image.333681925.4428/st%2Csmall%2C215x235-pad%2C210x230%2Cf8f8f8.lite-1u1.jpg') center center;
+  top: 50px;
+  left: 50px;
+  animation-name: bouncing;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.bdancer {
+  background: url('https://media.giphy.com/media/JltOMwYmi0VrO/giphy.gif') center center;
+  /*background-image: linear-gradient(to right,
+      rgba(0, 0, 0, .9) 25%,
+      rgba(0, 0, 0, .1) 50%,
+      rgba(0, 0, 0, .9) 75%);*/
+  color: white;
+  height: 100%;
+  width: 20%;
+
+  -webkit-animation: 4s linear 0s infinite alternate move_eye;
+          animation: 4s linear 0s infinite alternate move_eye;
+}
+
+@-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+        @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }

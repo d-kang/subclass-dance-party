@@ -1,12 +1,14 @@
 //blank blinky dancer template
 var makeBlankBlinkyDancer = function makeBlankBlinkyDancer(top, left, timeBetweenSteps) {
-  this.$node = $('<span class="dancer"></span>');
   makeDancer.call(this, top, left, timeBetweenSteps);
-  var oldStep = this.step;
-  this.step = function() {
-    oldStep.call(this);
-    this.$node.fadeIn();
-    this.$node.fadeOut();
-  };
+  this.$node = $('<span class="bdancer"></span>');
   this.setPosition(top, left);
+};
+
+makeBlankBlinkyDancer.prototype = Object.create(makeDancer.prototype);
+makeBlankBlinkyDancer.prototype.constructor = makeBlankBlinkyDancer;
+
+makeBlankBlinkyDancer.prototype.step = function() {
+  makeDancer.prototype.step.call(this);
+  this.$node
 };
